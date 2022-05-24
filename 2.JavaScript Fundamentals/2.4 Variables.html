@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>document.title = (location.pathname.substring(location.pathname.lastIndexOf("/") + 1)).replace('.html', '');</script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let gender = prompt("Are you a male : M , or a female : F ?");
+
+        if (gender == 'M') { alert("Wharup dawg!") }
+        else if (gender == 'F') { alert("You shall be my Queen.") };
+
+        function cake() {
+            var answer = prompt('Do you like cake? Yes or No');
+
+            if (answer == 'Yes') { alert('Me too!') }
+            else if (answer == 'No') { alert('Really?') }
+            else { alert("I don't understand"); cake(); }
+
+            return answer
+        }
+
+        final_answer = cake();
+
+        alert(`You said ${final_answer}`)
+    </script>
+</body>
+
+</html>
