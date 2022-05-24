@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        code {
+            background-color: black;
+            color: limegreen;
+            padding: 2px;
+            font-weight: 800;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>>>Assignement answers</h1>
+
+    <h1>The postfix and prefix forms</h1> <br>
+    <code>
+        let a = 1, b = 1;<br>
+        let c = ++a; // This should equal to 2<br>
+        let d = b++; // This should equal to 1<br>
+    </code>
+    <p>after the code runs, we get this:</p>
+    <code>
+        a = 2, b = 2, c = 2 , d = 1
+    </code>
+    <h1>Assignment result</h1>
+    <code>
+        let a = 2;<br>
+        let x = 1 + (a *= 2);
+    </code>
+    <p>My answer:</p>
+    <p>a = 4 and x = 5</p>
+    <h1>Type conversions <i style="font-size: smaller;font-weight: 100;">Fun one</i></h1>
+    <code>
+"" + 1 + 0 // '10'<br>
+"" - 1 + 0 // -1 <br>
+true + false // 1<br>
+6 / "3" // 2<br>
+"2" * "3" // 6<br>
+4 + 5 + "px" // 9px<br>
+"$" + 4 + 5 // $45<br>
+"4" - 2 // 2<br>
+"4px" - 2 // NaN<br>
+"-9" + 5 // -95 <br>
+"-9" - 5 // -14<br>
+null + 1 // 1<br>
+undefined + 1 // NaN <br>
+" \t \n" - 2 // NaN --> Correction: -2<br>
+    </code>
+    <h6>Got one wrong, cool.</h6>
+    <h1>Fix the addition</h1>
+    <p>Here’s a code that asks the user for two numbers and shows their sum. <br>
+
+        It works incorrectly. The output in the example below is 12 (for default prompt values). <br>
+
+        Why? Fix it. The result should be 3.</p>
+    <code>
+        let a = prompt("First number?", 1); <br>
+        let b = prompt("Second number?", 2); <br>
+        alert(a + b); // 12
+    </code>
+    <p>My answer</p>
+    <script>
+        let a = prompt("First number?", 1);
+        let b = prompt("Second number?", 2);
+        alert(+a + +b); // 12</script>
+    <p>We can either use the '+' operator or Number() method.</p>
+</body>
+
+</html>
