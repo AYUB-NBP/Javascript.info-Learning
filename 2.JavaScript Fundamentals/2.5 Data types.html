@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        code {
+            background-color: black;
+            color: lime;
+            padding: 2px;
+            border-radius: 2pt;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="infinity"></p>
+    <br>
+    <h2>Summary</h2>
+    <p>There are 8 basic data types in JavaScript.</p>
+    <ul>
+        <li><code>number</code> for numbers of any kind: integer or floating-point, integers are limited by
+            <code>±(2<sup>53</sup>-1)</code>.
+        </li>
+        <li><code>bigint</code> is for integer numbers of arbitrary length.(I don't get it yet)</li>
+        <li><code>string</code> for strings. A string may have zero or more characters, there’s no separate
+            single-character type.</li>
+        <li><code>boolean</code> for <code>true</code>/<code>false</code>.</li>
+        <li><code>null</code> for unknown values – a standalone type that has a single value <code>null</code>.</li>
+        <li><code>undefined</code> for unassigned values – a standalone type that has a single value
+            <code>undefined</code>.
+        </li>
+        <li><code>object</code> for more complex data structures.</li>
+        <li><code>symbol</code> for unique identifiers.</li>
+    </ul>
+
+</body>
+<script>
+    let infinity = 1 / 0;
+
+    document.getElementById('infinity').innerHTML = `Cause I love you for ${infinity} (1/0)!`;
+    console.log('Infinity is a ' + typeof (infinity));
+
+    let name = "Ilya";
+
+    alert(`hello ${1}`); // 1
+
+    alert(`hello ${"name"}`); // "name"
+
+    alert(`hello ${name}`); // "Ilya"
+</script>
+
+</html>
