@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        code {
+            background-color: black;
+            color: limegreen;
+            padding: 2px;
+            font-weight: 800;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>
+        Summary </h2>
+    <ul>
+        <li>Comparison operators return a boolean value.</li>
+        <li>Strings are compared letter-by-letter in the “dictionary” order.</li>
+        <li>When values of different types are compared, they get converted to numbers (with the exclusion of a strict
+            equality check).</li>
+        <li>The values <code>null</code> and <code>undefined</code> equal <code>==</code> each other and do not equal
+            any other value.</li>
+        <li>Be careful when using comparisons like <code>&gt;</code> or <code>&lt;</code> with variables that can
+            occasionally be <code>null/undefined</code>. Checking for <code>null/undefined</code> separately is a good
+            idea.</li>
+    </ul>
+    </div>
+
+    <h3>Exercice</h3>
+
+    <div class="task__answer-content">
+        <div class="formatted">
+            <div id="lhb6y9gkar" data-trusted="1" class="code-example" data-prism-highlighted="1">
+                <div class="codebox code-example__codebox">
+
+                    <div class="codebox__code" data-code="1">
+                        <pre class="line-numbers  language-javascript"
+                            tabindex="0"><span class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span><code class=" language-javascript"><span class="token number">5</span> <span class="token operator">&gt;</span> <span class="token number">4</span> → <span class="token boolean">true</span>
+  <span class="token string">"apple"</span> <span class="token operator">&gt;</span> <span class="token string">"pineapple"</span> → <span class="token boolean">false</span>
+  <span class="token string">"2"</span> <span class="token operator">&gt;</span> <span class="token string">"12"</span> → <span class="token boolean">true</span>
+  <span class="token keyword">undefined</span> <span class="token operator">==</span> <span class="token keyword">null</span> → <span class="token boolean">true</span>
+  <span class="token keyword">undefined</span> <span class="token operator">===</span> <span class="token keyword">null</span> → <span class="token boolean">false</span>
+  <span class="token keyword">null</span> <span class="token operator">==</span> <span class="token string">"\n0\n"</span> → <span class="token boolean">false</span>
+  <span class="token keyword">null</span> <span class="token operator">===</span> <span class="token operator">+</span><span class="token string">"\n0\n"</span> → <span class="token boolean">false</span></code></pre>
+                    </div>
+                </div>
+
+            </div>
+            <p>Some of the reasons:</p>
+            <ol>
+                <li>Obviously, true.</li>
+                <li>Dictionary comparison, hence false. <code>"a"</code> is smaller than <code>"p"</code>.</li>
+                <li>Again, dictionary comparison, first char <code>"2"</code> is greater than the first char
+                    <code>"1"</code>.
+                </li>
+                <li>Values <code>null</code> and <code>undefined</code> equal each other only.</li>
+                <li>Strict equality is strict. Different types from both sides lead to false.</li>
+                <li>Similar to <code>(4)</code>, <code>null</code> only equals <code>undefined</code>.</li>
+                <li>Strict equality of different types.</li>
+            </ol>
+        </div>
+    </div>
+</body>
+
+</html>
