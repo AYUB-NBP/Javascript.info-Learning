@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .true {
+            color: green;
+        }
+
+        .false {
+            color: red;
+        }
+
+        .logic {
+            color: orangered;
+        }
+    </style>
+</head>
+
+<body>
+    <header style='font-size: xx-large; font-weight: bold;'>Conditional branching: if, '?'</header>
+    <h1>The “if” statement</h1>
+    <code><p>if <b>( Condition / boolean* )</b> { <br> Code to execute when condition is truthy. } </p></code>
+    <script>
+        if (1) { document.querySelector('b').style.color = 'green' }
+        else if (0) { }
+    </script>
+    <h1>The "else" clause</h1>
+    <p>Otherwise, with a falsy condition: if an <b>else</b> or <b>else if</b> exists, then that gets executed.</p>
+    <h1>Conditional operator ‘?’
+    </h1>
+    <p> <code class="logic">if</code> this <code class="logic">then</code> that <code class="logic">else</code> the
+        other.</p>
+    <p>
+        <code>condition <code class="logic">?</code> value1 <code class="logic">:</code> value2;
+        </code>
+    </p>
+
+</body>
+
+</html>
