@@ -7,6 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        code {
+            background-color: black;
+            color: limegreen;
+            padding: 2px;
+            font-weight: 800;
+        }
+
         .true {
             color: green;
         }
@@ -30,7 +37,8 @@
         else if (0) { }
     </script>
     <h1>The "else" clause</h1>
-    <p>Otherwise, with a falsy condition: if an <b>else</b> or <b>else if</b> exists, then that gets executed.</p>
+    <p class="false">Otherwise, with a falsy condition: if an <b>else</b> or <b>else if</b> exists, then that gets
+        executed.</p>
     <h1>Conditional operator ‘?’
     </h1>
     <p> <code class="logic">if</code> this <code class="logic">then</code> that <code class="logic">else</code> the
@@ -39,6 +47,91 @@
         <code>condition <code class="logic">?</code> value1 <code class="logic">:</code> value2;
         </code>
     </p>
+    <br><br>
+    <h1>Tasks</h1>
+    <ul>
+        <li>
+            <h4>Question 1: if (a string with zero)</h4>
+            <p><code>if ("0") {<br>alert( 'Hello' ); <br>}</code></p>
+            <span>Will it execute alert or not ?</span>
+            <h4>Answer:</h4><span>Yes, "0" is a string that is not empty</span>
+        </li>
+        <li>
+            <h4>Question 2: The name of JavaScript</h4>
+            <p>Using the if..else construct, write the code which asks: ‘What is the “official” name of JavaScript?’</p>
+            <p>If the visitor enters “ECMAScript”, then output “Right!”, otherwise – output: “You don’t know?
+                ECMAScript!”
+            </p>
+            <h4>Answer:</h4>
+            <p><code>function DoYouKnow() {<br>
+                answer = prompt(`What's the “official” name of JavaScript?`);<br>
+                (answer == 'ECMAScript') ? alert('Right') : alert(`You don't know? “ECMAScript”!`);<br>
+            }</code></p>
+        </li>
+        <li>
+            <h4>Question 3: Show the sign</h4>
+            <p>Using if..else, write the code which gets a number via prompt and then shows in alert:</p>
+            <ul>
+                <li>1, if the value is greater than zero,
+                </li>
+                <li>-1, if less than zero,
+                </li>
+                <li>0, if equals zero.
+                </li>
+            </ul>
+            <h4>Answer:</h4>
+            <p>
+                <code>let showSign = () => {<br>
+                answer = prompt('Type in a number:');<br>
+                let reaction = answer > 0 ? 1 : answer < 0 ? -1 : 0;<br>
+                alert(reaction);<br>
+                }</code>
+            </p>
+        </li>
+        <li>
+            <h4>Question 4: Rewrite 'if' into '?' ( Oops! I did it already.)</h4>
+            <p>Rewrite this if using the conditional operator '?':</p><br>
+            <p><code>let result;<br>
+
+                if (a + b < 4) {<br>
+                  result = 'Below';<br>
+                } else {<br>
+                  result = 'Over';<br>
+                }</code></p>
+            <h4>Answer:</h4>
+            <p><code>
+                    let result; <br>
+                    (a + b < 4) ? 'Bellow': 'Over';
+                </code></p>
+        </li>
+        <li>
+            <h4>Question 5: Rewrite 'if..else' into '?'</h4>
+            <p>Rewrite if..else using multiple ternary operators '?'.</p>
+            <p>For readability, it’s recommended to split the code into multiple lines.
+            </p>
+            <p><code>let message;<br>
+
+                if (login == 'Employee') {<br>
+                  message = 'Hello';<br>
+                } else if (login == 'Director') {<br>
+                  message = 'Greetings';<br>
+                } else if (login == '') {<br>
+                  message = 'No login';<br>
+                } else {<br>
+                  message = '';<br>
+                }</code></p>
+            <h4>Answer:</h4>
+            <p>
+                <code>
+                    let message;<br>
+                    message = (login == 'Employee') ? 'Hello' :<br>
+                    login == 'Director' ? 'Greetings' :<br>
+                    login == '' ? 'No login' :<br>
+                    '';<br>
+                </code>
+            </p>
+        </li>
+    </ul>
 
 </body>
 
