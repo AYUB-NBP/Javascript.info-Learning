@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Logical Operators</title>
+        <style>
+            code {
+                background-color: black;
+                color: limegreen;
+                padding: 2px;
+                font-weight: 800;
+            }
+
+            span {
+                font-weight: bolder !important;
+            }
+
+            .true {
+                color: limegreen;
+            }
+
+            .false {
+                color: red;
+            }
+
+            .logic {
+                color: orangered;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Logical operators</h1>
+        <p>There are four logical operators in JavaScript: <b>|| (OR)</b>, <b>&& (AND)</b>, <b>! (NOT)</b>, <b>??
+                (Nullish Coalescing)</b>. Here we cover the
+            first three, the ?? operator is in the next article.</p>
+        <ul>
+            <li>
+                <h4>OR "||" finds the first truthy value </h4>
+                <p>In classical programming, the logical OR is meant to manipulate boolean values only. If any of its
+                    arguments are true,
+                    it returns true, otherwise it returns false.</p>
+                <h5>Example 1</h5>
+                <code>
+                let firstName = ""; <span class="false"><--</span><br> 
+                let lastName = "";<span class="false">
+                    <--</span><br>
+                let nickName = "SuperCoder";<span class="true">
+                    <--</span><br> 
+                
+                alert( firstName || lastName || nickName || "Anonymous");</code>
+                <script>
+
+                    function example_1() {
+                        let firstName = "";
+                        let lastName = "";
+                        let nickName = " SuperCoder"; alert(firstName || lastName || nickName || "Anonymous")
+                    };
+                </script>
+                <button onclick="example_1()">Example</button>
+                <h5>Example 2</h5>
+                <code>
+                        let firstName = "";<br>
+                        let lastName = "";<br>
+                        let nickName = "";<br>
+                        
+                        alert( firstName || lastName || nickName || "Anonymous");</code>
+                <script>
+
+                    function example_2() {
+                        let firstName = "";
+                        let lastName = "";
+                        let nickName = ""; alert(firstName || lastName || nickName || "Anonymous")
+                    };
+                </script>
+                <button onclick="example_2()">Example</button>
+            </li>
+            <li>
+                <h4>AND “&&” finds the first falsy value</h4>
+                <p>The <b>AND</b> operator is represented with two ampersands <b>&&</b></p>
+                <p>In classical programming, AND returns true if both operands are truthy and false otherwise.
+                </p>
+                
+
+
+            </li>
+        </ul>
+    </body>
+
+</html>
