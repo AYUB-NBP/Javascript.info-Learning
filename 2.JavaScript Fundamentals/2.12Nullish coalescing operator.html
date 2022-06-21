@@ -32,6 +32,42 @@
         </style>
     </head>
 
-    <body></body>
+    <body>
+        <h1>Nullish coalescing operator '??'</h1>
+        <p><b>??</b> returns the first defined argument.</p>
+        <h4>This:</h4>
+        <code>result = a ?? b</code>
+        <h4>is equivalent to this:</h4>
+        <code>result = (a !== null && a !== undefined) ? a : b</code>
+        <p>Provided "a" is defined, both lines of code should return "a"; The first defined argument.</p>
+
+        <h4>Examples of use for Nulish Coalesching operator:</h4>
+        <ol>
+            <li>
+                <p>Provides a default value in case the main argument is not defined.</p>
+                <code>
+                let user;<br>
+                <br>
+                alert(user ?? "Anonymous"); // Anonymous (user not defined)</code><br><br>
+            </li>
+            <li>Finds the first defined argument amongst many:</li> <br>
+            <code>let firstName = null; <br>
+            let lastName = null;<br>
+            let nickName = "Supercoder";<br>
+            <br>
+            // shows the first defined value:<br>
+            alert(firstName ?? lastName ?? nickName ?? "Anonymous"); // Supercoder</code>
+        </ol>
+
+
+
+        <b>?? and || do the same thing but the important difference between them is that:
+            <ul>
+                <li>|| returns the first truthy value.
+                </li>
+                <li>?? returns the first defined value.</li>
+            </ul>
+        </b>
+    </body>
 
 </html>
