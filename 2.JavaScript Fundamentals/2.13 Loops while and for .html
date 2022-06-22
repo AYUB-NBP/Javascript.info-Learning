@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            code {
+                background-color: black;
+                color: limegreen;
+                padding: 2px;
+                font-weight: 800;
+            }
+
+            span {
+                font-weight: bolder !important;
+            }
+
+            .true {
+                color: limegreen;
+            }
+
+            .false {
+                color: red;
+            }
+
+            .logic {
+                color: orangered;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Loops: while and for ...</h1>
+        <b>This whole loop thing is to repeat code over and over and over and over and over X amount of times or
+            forever.</b>
+        <ul>
+            <li>
+                <h4>The “while” loop</h4>
+                <p>
+                <h5>Syntax: <br>
+                </h5><code>
+                    while (condition) {<br>
+                        // code <br>
+                        // so-called "loop body" <br>
+                    </code>
+                <p>While the <code>condition</code> is <span class="true">truthy</span>, the code from the loop body is
+                    executed.</p>
+                <p>Curly braces are not required for a single-line body</p><br><span> Example:
+                    <code>while (x) f(y);</code></span>
+                </p>
+            </li>
+            <li>
+                <h4>The “do…while” loop</h4>
+                <p>Syntax be like:</p>
+                <code>do {<br>
+                // loop body <br>
+                } while (condition);<br></code>
+                <p>The loop will first execute the body, then check the condition, and, while it’s truthy, execute it
+                    again and again.</p>
+                <p>This form of syntax should only be used when you want the body of the <b>loop to execute at least
+                        once</b> regardless of the
+                    condition being truthy. Usually, the other form is preferred: while(…) {…}</p>
+            </li>
+            <li>
+                <h4>The “for” loop</h4>
+                <p>Syntax:</p>
+                <code>for (begin; condition; step) { <br> 
+                // ... loop body ...<br>
+                }</code>
+                <p>Example:</p>
+                <code>
+                    for (let i = 0; i < 3; i++) { // shows 0, then 1, then 2 <br> alert(i); <br> }
+                </code>
+                <h4>Skipping parts:</h4>
+                <p>I can skip typing the "begin" part if the "i" is already defined outside the for loop.</p>
+                <p>I can also skip the "Step" when the "i" is incremented within the body of the for loop.</p>
+            </li>
+            <li>
+                <h4>Breaking the loop</h4>
+                <p>Normally, a loop exits when its condition becomes falsy.</p>
+                <p>But we can force the exit at any time using the special <code>break</code> directive.</p>
+            </li>
+            <li>
+                <h4>Continue to the next iteration</h4>
+                <p>Skips an iteration depending on a condition. <br>It can be used like a filter. Pretty cool.</p>
+            </li>
+        </ul>
+    </body>
+
+</html>
