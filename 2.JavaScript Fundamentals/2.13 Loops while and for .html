@@ -82,10 +82,25 @@
                 <h4>Breaking the loop</h4>
                 <p>Normally, a loop exits when its condition becomes falsy.</p>
                 <p>But we can force the exit at any time using the special <code>break</code> directive.</p>
+                <code>let sum = 0; <br>
+                
+                while (true) {<br>
+                
+                let value = +prompt("Enter a number", '');<br>
+                
+                if (!value) break; // (*)<br>
+                
+                sum += value;<br>
+                
+                }<br>
+                alert( 'Sum: ' + sum );</code>
             </li>
             <li>
                 <h4>Continue to the next iteration</h4>
                 <p>Skips an iteration depending on a condition. <br>It can be used like a filter. Pretty cool.</p>
+                <h4>Check this out:</h4>
+                <code>for (i=0;i<=10;i++)<br>{ if (i%2==0){continue}<br>else {i++};<br> console.log(i)<br> }</code>
+                <p>When you copy paste that code in the browser Console, you get a filtered set of numbers that exclude odd ones and keeps even numbers.</p>
             </li>
         </ul>
     </body>
