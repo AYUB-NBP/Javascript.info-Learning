@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Swich Swich B*ch</title>
         <style>
             code {
                 background-color: black;
@@ -27,13 +27,47 @@
             }
 
             .logic {
-                color: orangered;
+                color: yellow;
             }
         </style>
     </head>
 
-  <body>
-    <a href="live Color Change.html">Idea just for fun: Live color change</a>
-  </body>
+    <body>
+        <a href="live Color Change.html">Idea just for fun: Live color change</a><br>
+        <a href="Switch.html">Switch Example</a>
+        <br>
+        <h1>The Syntax</h1>
+        <p>
+            <code>
+                switch(expression) {<br>
+                case x:<br>
+                // code block<br>
+                break;<br>
+                case y:<br>
+                // code block<br>
+                break;<br>
+                default:<br>
+                // code block<br>
+                }
+            </code>
+        </p>
+        <h1>Grouping with lack of Breaks</h1>
+        <p><code>let a = 3;<br>
+        
+        switch (a) {<br>
+        case 4:<br>
+        alert('Right!');<br>
+        <b class="false">break</b>;<br>
+        
+        <b class="logic">case 3</b>: // (*) grouped two cases<br>
+        <b class="logic">case 5</b>:<br>
+        alert('Wrong!');<br>
+        alert("Why don't you take a math class?");<br>
+        <b class="false">break</b>;<br>
+        
+        default:<br>
+        alert('The result is strange. Really.');<br>
+        }</code></p>
+    </body>
 
 </html>

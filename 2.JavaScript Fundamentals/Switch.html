@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Switch Example</title>
+        <script>
+            function test() {
+                let a = prompt('Type a number from 3 to 5');
+                a = parseInt(a);
+                switch (a) {
+                    case 3:
+                        alert('Too small');
+                        break;
+                    case 4:
+                        alert('Exactly!');
+                        break;
+                    case 5:
+                        alert('Too big');
+                        break;
+                    default:
+                        alert("I don't know such values");
+                }
+
+            }
+        </script>
+        <style>
+            * {
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            div {
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            button {
+                font-size: 100pt;
+                border: 5px solid black;
+                padding: 50px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <button onclick="test()">CLICK ME!</button>
+        </div>
+    </body>
+
+</html>
