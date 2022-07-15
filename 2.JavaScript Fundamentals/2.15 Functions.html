@@ -7,6 +7,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Functions</title>
         <style>
+            * {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
             code {
                 background-color: black;
                 color: limegreen;
@@ -26,15 +30,47 @@
                 color: yellow;
             }
         </style>
+        <script>
+            function WhatILike(fruit, veggy) {
+                alert('I like ' + fruit + ' and ' + veggy + '!');
+            }
+        </script>
     </head>
 
     <body>
-        <h1>Functions syntax</h1>
+        <h1>• Functions syntax</h1>
         <code>function name(parameter1, parameter2, ... parameterN) {<br>
         ...body...
         }</code>
-        <h1>Local and Global Variables</h1>
-        <h1>Parameters</h1>
+        <h1>• Local and Global Variables</h1>
+        <h2>Local Variables</h2>
+        <p>Basically any variable used by the function that's inside of it. It's inaccessible from outside the function.
+            Great way to isolate daat without problems with other functions.</p>
+        <h2>Global Variables</h2>
+        <p>Variables declared outside of any function, such as the outer userName in the code above, are called global.
+
+            Global variables are visible from any function (unless shadowed by locals).
+
+            It’s a good practice to minimize the use of global variables. Modern code has few or no globals. Most
+            variables reside
+            in their functions. Sometimes though, they can be useful to store project-level data.</p>
+        <h1>• Parameters</h1>
+        <p>
+        <ul>
+            <li>A parameter is the variable listed inside the parentheses in the function declaration (it’s a
+                declaration time term).
+            </li>
+            <li>An argument is the value that is passed to the function when it is called (it’s a call time term).</li>
+        </ul>
+        <h4>Example:</h4>
+
+        <code>function WhatILike(fruit, veggy) {<br>
+        alert('I like ' + fruit + ' and ' + veggy + '!');<br></code>
+        <br>
+        <button id="btn" onclick="WhatILike(`Bananas`,`Tomatoes`)">Test it (Banana & Tomatoes as
+            Arguments)</button>
+
+        </p>
 
     </body>
 
