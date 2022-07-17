@@ -11,11 +11,13 @@
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
             }
 
+            body {
+                margin: auto 300px;
+            }
+
             code {
                 background-color: black;
                 color: limegreen;
-                padding: 2px;
-                font-weight: 800;
             }
 
             .true {
@@ -43,10 +45,10 @@
         ...body...
         }</code>
         <h1>• Local and Global Variables</h1>
-        <h2>Local Variables</h2>
+        <h2>&nbsp;&nbsp;&nbsp;&nbsp;Local Variables</h2>
         <p>Basically any variable used by the function that's inside of it. It's inaccessible from outside the function.
             Great way to isolate daat without problems with other functions.</p>
-        <h2>Global Variables</h2>
+        <h2>&nbsp;&nbsp;&nbsp;&nbsp;Global Variables</h2>
         <p>Variables declared outside of any function, such as the outer userName in the code above, are called global.
 
             Global variables are visible from any function (unless shadowed by locals).
@@ -67,9 +69,31 @@
         <code>function WhatILike(fruit, veggy) {<br>
         alert('I like ' + fruit + ' and ' + veggy + '!');<br></code>
         <br>
+        <p>After clicking this button, the function will be called with these arguments: <br><br>
+            <code>WhatILike(`Bananas`,`Tomatoes`)</code>
+        </p>
         <button id="btn" onclick="WhatILike(`Bananas`,`Tomatoes`)">Test it (Banana & Tomatoes as
             Arguments)</button>
-
+        </p>
+        <h1>• Default values</h1>
+        <p>When creating a function and you put parameters in it. A value can be assigned to those parameters that will
+            be default to when no argument has been used the function is called.</p>
+        <h4>Example:</h4>
+        <p><code>
+        let x, y;<br>
+        function XY(x = "0", y = "0") {<br>
+        alert(x + ', ' + y);<br>
+        }
+        </code>
+            <script>
+                let x, y;
+                function XY(x = "0", y = "0") {
+                    alert(x + ', ' + y);
+                }
+            </script>
+            <br><br>
+            <button onclick="XY()">No Argument (0 is default)</button>&nbsp;<button onclick="XY(1,2)">1, 2 as
+                argument</button>
         </p>
 
     </body>
