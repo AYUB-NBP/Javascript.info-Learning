@@ -1,0 +1,27 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    margin: auto 300px;
+    background-color: grey;
+}
+
+code {
+    background-color: black;
+    padding: 2px;
+    margin: auto;
+    color: limegreen;
+}
+
+.true {
+    color: limegreen;
+}
+
+.false {
+    color: red;
+}
+
+.logic {
+    color: yellow;
+}
