@@ -3,7 +3,7 @@
 }
 
 body {
-    margin: auto 300px;
+    margin: auto 20vw;
     background-color: grey;
 }
 
@@ -24,4 +24,9 @@ code {
 
 .logic {
     color: yellow;
+}
+button{
+    border: none;
+    color: white;
+    background-color: rgb(180, 28, 53);
 }
