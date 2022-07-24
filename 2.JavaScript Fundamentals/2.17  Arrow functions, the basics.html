@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Arrow Functions, The basics</title>
+        <link rel="stylesheet" href="../style.css">
+
+    </head>
+
+    <body>
+        <h1>Arrow functions, the basics
+        </h1>
+        <p><b>Arrow function</b> syntax is better than <b>Function Expressions</b>.</p>
+        <code>let func = (arg1, arg2, ...) => //returned code</code>
+        <script>
+            let multiply = (a, b) => a + b;
+            multiply(2, 2); // 4.
+        </script>
+        <h4>Example:</h4>
+        <code>let multiply = (a, b) => a + b;<br>
+        multiply(2, 2); // 4.</code>&nbsp;<button onclick="alert(multiply(2,2))">Test it</button>
+        <h2>Multiline Arrow Function</h2>
+        <p>Arrow functino with more complex returned result</p>
+        <h4>Example:</h4>
+        <script>// math function a*b+c 
+            let mathFunc = (a, b, c) => {
+                let multiplication = a * b;
+                let addition = multiplication + c;
+                return addition;
+            }
+        </script>
+        <code>// math function a*b+c <br>
+        let mathFunc = (a, b, c) => {<br>
+        let multiplication = a * b;<br>
+        let addition = multiplication + c;<br>
+        return addition;<br>
+        }</code> &nbsp; <button onclick="alert(mathFunc(1,2,3))" title="Result must be : (1*2)+3=5">Test it (1,2,3)</button>
+    </body>
+
+
+
+</html>
