@@ -68,6 +68,29 @@
         <i>All these functions are modal, they pause the code execution and prevent the visitor from interacting with
             the page
             until they answer.</i>
+        <h2>Operators</h2>
+        <p>JavaScript supports the following operators:
+        </p>
+        <h5>Arithmetical:</h5>
+        <p>Regular: <code>* + - /</code>, also <code>%</code> for the remainder and <code>**</code> for power of a
+            number.</p>
+        <p>The binary plus <code>+</code> concatenates strings. And if any of the operands is a string, the other one is
+            converted to string
+            too:</p>
+        <h4>Example:</h4>
+        <script>
+            let concat = () => {
+                alert('1' + 2); // '12', string
+                alert(1 + '2');
+            } // '12', string
+        </script>
+        <code>alert( '1' + 2 ); // '12', string <br>
+        alert( 1 + '2' ); // '12', string</code>
+        &nbsp;<button onclick="concat()">Test it</button>
+        <h5>Assignments</h5>
+        <p>There is a simple assignment: <code>a = b</code> and combined ones like <code>a *= 2</code>.
+        </p>
+
     </body>
 
 
