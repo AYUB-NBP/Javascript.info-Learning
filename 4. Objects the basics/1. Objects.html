@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Objects!</title>
+        <link rel="stylesheet" href="../style.css" class="css">
+
+    </head>
+
+    <body>
+        <H1>Objects</H1>
+        <h2>Object Creation Syntax</h2>
+        <code>let user = new Object(); // "object constructor" syntax <br>
+    let user = {}; // "object literal" syntax</code>
+        <p>☝️That's an empty Object</p>
+        <p>When we use <b>{}</b>to create an object. That declaration is called <b>an Object literal.</b></p>
+        <h2>Literals and properties</h2>
+        <p>We can immediately put some properties into {...} as <b>“key: value”</b> pairs:</p>
+        <script>let human = { name: "Ayoub", age: "25", IQ: "999" };</script>
+        <code>let human = { name: "Ayoub", age: "25", IQ: "999" };</code><br><br>
+        <button onclick="alert('These are the keys of my Human Object: ' + Object.keys(human))"">Human object keys</button> &nbsp; 
+            <button onclick=" alert('These are the values: ' + Object.values(human))">Human Object Values</button>
+<p>• We can <b>access</b> any property value from an object using the object' s declared name and a key within it.</p>
+            <h4>Example</h4>
+            <script>function Question() { alert("How old is " + human.name + "?"); alert(human.name + " is " + human.age + " years old.") };
+            </script>
+            <code>function Question() { <br> alert("How old is " + human.name + "?");<br> alert(human.name + " is " + human.age + " years old.") };</code>
+            <br><br><Button onclick="Question()">Question()</Button>
+            <p>• To remove a property, we can use the <code>delete</code> operator:</p>
+            <script>
+                console.log("//Before deletion of IQ property:");
+                console.log(human);
+                delete human.IQ;
+                console.log("//After deletion of IQ property:");
+                console.log(human)
+            </script>
+            <code>console.log("//Before deletion of IQ property:"); <br>
+            console.log(human);<br>
+            delete human.IQ;<br>
+            console.log("//After deletion of IQ property:");<br>
+            console.log(human);<br></code>
+            <br><i>Check out the Developper Tools Console Log.</i>
+            <h2>Square brackets</h2>
+    </body>
+
+</html>

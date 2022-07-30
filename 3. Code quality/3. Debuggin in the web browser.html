@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Debugging
+        </title>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+
+    <body>
+        <h1>Debugging in the browser</h1>
+        <p><b>Debugging</b> is the process of finding and fixing errors within a script.</p>
+        <h2>Console</h2>
+        <p>Easy stuff, you press <b>F12</b> and get to the console and also get to see files in the Sources tab.</p>
+        <p>You can press <b>Esc</b> to open a <b>Console</b> panel if you're not on the console Tab already</p>
+        <h2>Breakpoints</h2>
+        <p>Apparently in the <b>Sources tab</b> when the dev tools, You can choose within the .Js file break points
+            where the code execution can be automatically paused at those points. </p>
+        <p>While the code is paused, we can examine current variables, execute commands in the console etc. In other
+            words, we can
+            debug it.</p>
+        <h2>The command “debugger”</h2>
+        <code>function hello(name) {<br>
+        &nbsp; let phrase = `Hello, ${name}!`;<br>
+        <br>
+        &nbsp; debugger; // <-- the debugger stops here <br> &nbsp; say(phrase); <br>}</code>
+        <p><b>Such command works only when the development tools are open, otherwise the browser ignores it.</b>
+        </p>
+        <h2>Pause and look around
+        </h2>
+
+        <p style="font-size:100px ;">This is Kind Of Boring!</p>
+        <b>I wanna learn about ⏹️objects.👀🙄</b>
+    </body>
+
+</html>

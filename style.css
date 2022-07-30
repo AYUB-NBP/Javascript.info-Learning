@@ -11,7 +11,7 @@ code {
     background-color: black;
     padding: 2px;
     margin: auto;
-    color: limegreen;
+    color: rgb(5, 202, 252);
 }
 
 .true {
@@ -25,8 +25,11 @@ code {
 .logic {
     color: yellow;
 }
-button{
+
+button {
     border: none;
     color: white;
     background-color: rgb(180, 28, 53);
 }
+
+h2 {margin-left: 1em;}
