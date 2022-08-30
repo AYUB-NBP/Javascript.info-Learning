@@ -36,6 +36,7 @@
                 delete human.IQ;
                 console.log("//After deletion of IQ property:");
                 console.log(human)
+                human.iq = "999";
             </script>
             <code>console.log("//Before deletion of IQ property:"); <br>
             console.log(human);<br>
@@ -44,6 +45,36 @@
             console.log(human);<br></code>
             <br><i>Check out the Developper Tools Console Log.</i>
             <h2>Square brackets</h2>
+            <script>
+                let brackets = () => {
+                    let user = {};
+                    console.log(user);
+                    // set
+                    user["likes birds"] = true;
+
+
+                    // get
+                    alert(user["likes birds"]); // true
+                    console.log(user);
+
+                    // delete
+                    delete user["likes birds"];
+                    console.log(user);
+
+                };
+            </script>
+            <code>let user = {}; <br>
+            <br>
+            // set<br>
+            user["likes birds"] = true;<br>
+            <br>
+            // get<br>
+            alert(user["likes birds"]); // true<br>
+            <br>
+            // delete<br>
+            delete user["likes birds"];</code>
+            <button onclick="brackets()">Run</button> <i>Check logs</i>
+
     </body>
 
 </html>
